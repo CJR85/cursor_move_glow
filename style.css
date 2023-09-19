@@ -51,4 +51,6 @@ body:hover #cursor {
   pointer-events: none;
   width: 10px;
   height: 10px;
+  transition: 1s;
+  filter: drop-shadow(0 0 5px #0f0) drop-shadow(0 0 25px #0f0) hue-rotate(60deg);
 }
