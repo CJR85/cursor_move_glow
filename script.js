@@ -15,7 +15,7 @@ document.onmousemove = function (e) {
   element.className = 'element';
   body.prepend(element);
 
-  // Move elements to randomly across x & y axis
+  // Move elements randomly  across x & y axis
   element.style.left = cursor.getBoundingClientRect().x + ' px';
   element.style.top = cursor.getBoundingClientRect().y + ' px';
 
