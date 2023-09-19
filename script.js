@@ -11,13 +11,13 @@ document.onmousemove = function (e) {
   body.style.backgroundPositionY = e.pageY / -4 + 'px';
 
   // Add elements to body
-  let element = createElement('div');
+  let element = document.createElement('div');
   element.className = 'element';
   body.prepend(element);
 
   // Move elements randomly across x & y axis
-  element.style.left = cursor.getBoundingClientRect().x + ' px';
-  element.style.top = cursor.getBoundingClientRect().y + ' px';
+  element.style.left = cursor.getBoundingClientRect().x + 'px';
+  element.style.top = cursor.getBoundingClientRect().y + 'px';
 
   setTimeout(function () {
     let text = document.querySelectorAll('.element')[0],
