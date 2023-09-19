@@ -17,7 +17,7 @@ document.onmousemove = function (e) {
 
   // Move elements randomly across x & y axis
   element.style.left = cursor.getBoundingClientRect().x + 'px';
-  element.style.top = cursor.getBoundingClientRect().y + 'px';
+  element.style.top = cursor.getBoundingClientRect().y - 10 + 'px';
 
   setTimeout(function () {
     let text = document.querySelectorAll('.element')[0],
@@ -30,5 +30,11 @@ document.onmousemove = function (e) {
       parseInt(text.style.top) - directionY * (Math.random() * 200) + 'px';
     text.style.opacity = 0;
     text.style.transform = 'scale(0.25)';
-  });
+    text.innerHTML = 'hi';
+
+    // Remove element
+    setTimeout(function () {
+      element.remove();
+    }, 1000);
+  }, 10);
 };
