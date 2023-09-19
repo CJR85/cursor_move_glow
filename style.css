@@ -44,3 +44,11 @@ body {
 body:hover #cursor {
   transform: translate(-1px, 5px) rotate(15deg) scale(1);
 }
+
+.element {
+  position: absolute;
+  background: #0f0;
+  pointer-events: none;
+  width: 10px;
+  height: 10px;
+}
